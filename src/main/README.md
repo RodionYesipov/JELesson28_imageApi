@@ -16,9 +16,9 @@
  
  *3) получить картинку по id по прямой ссылке*
  
-###1) POST запрос
-####Пример 
-#####Request(Java OK HTTP)
+### 1) POST запрос
+#### Пример 
+##### Request(Java OK HTTP)
 ```java
 OkHttpClient client = new OkHttpClient();
 
@@ -41,12 +41,12 @@ Request request = new Request.Builder()
 
 Response response = client.newCall(request).execute();
 ```
-#####Response
+##### Response
 `Image posted ID = 26`
 
-###2) GET запрос(вернуть список всех изображений id, descript)
-####Пример
-#####Request(Java OK HTTP)
+### 2) GET запрос(вернуть список всех изображений id, descript)
+#### Пример
+##### Request(Java OK HTTP)
 
 ```java
 OkHttpClient client = new OkHttpClient();
@@ -68,7 +68,7 @@ Request request = new Request.Builder()
 Response response = client.newCall(request).execute();
 ```
 
-#####Response
+##### Response
 `[
    {
      "id": 26,
@@ -76,9 +76,9 @@ Response response = client.newCall(request).execute();
    }
  ]`
  
- ###3) GET запрос(вернуть изображение по id)
- ####Пример 
- #####Request(Java OK HTTP)
+ ### 3) GET запрос(вернуть изображение по id)
+ #### Пример 
+ ##### Request(Java OK HTTP)
  
  ```java
 OkHttpClient client = new OkHttpClient();
@@ -100,5 +100,5 @@ Request request = new Request.Builder()
 Response response = client.newCall(request).execute();
 ```
 
-#####Response
+##### Response
 ![lion](https://github.com/RodionYesipov/testImages/blob/master/index.jpg)
